@@ -1,0 +1,73 @@
+alias tu='top -o cpu -s 2' # cpu, interval 2 sec
+alias tm='top -o vsize' # memory
+
+alias t='top' #top looking the process
+
+#homebrew
+alias bup='brew update' #update homebrew formulae
+alias bdoc='brew doctor' #homebrew diagnostic
+alias bout='brew outdated' #homebrew list program outdated
+alias bupg='brew upgrade' #homebrew upgrade program yg outdated
+alias bl='brew list' #list file yg terinstall
+alias bi='brew info' #info program yg terinstall
+alias bcl='brew cleanup'    #brew cleanup
+
+#file management
+alias ll='ls -laFG'
+alias la='ls -GAC'
+alias l='ls -GCF'
+alias lk='ls -lGC ??*'
+alias ldev='ls /dev/tty.*'
+
+#shortcut
+alias desk='cd ~/Desktop'
+alias dropbox='cd ~/Dropbox'
+alias ~='cd ~'
+alias z='cd ..'
+alias zz='cd ../..'
+alias document='cd ~/Documents'
+alias download='cd ~/Downloads'
+alias dotenv='vi ~/binaulia/dotfiles/bash/env'      #edit env 
+alias dotcon='vi ~/binaulia/dotfiles/bash/config'   #edit config
+alias dotali='vi ~/binaulia/dotfiles/bash/aliases'   #edit aliases
+
+#show hidden files
+alias lh='ls -ldGC .??*'
+alias lhd='ls -lGC .??*'
+
+alias rm='rm -i'
+alias df='df -h'
+
+#git shortcut
+alias g="git status"
+
+alias ENVI=". ~/.virtualenvs/ENVI/bin/activate"
+
+#python
+alias py='python' 
+alias ipy='ipython'
+
+alias sw='sudo softwareupdate -l'
+
+#stroke: network scanning built in 
+alias stroke="/Applications/Utilities/Network\ Utility.app/Contents/Resources/stroke"
+
+#sourcing ~/.bashrc
+alias sbash='. ~/.bashrc'
+
+
+alias pg_start='pg_ctl -D /usr/local/var/postgres -l logfile start'
+alias pg_stop='pg_ctl stop'
+
+#networking
+alias ifup='sudo ifconfig en0 up' #ekivalen sudo ifup eth0 dilinux
+alias ifdown='sudo ifconfig en0 down' #ekivalen sudo ifdown eth0 dilinux
+
+#latexmk
+alias lat='latexmk -pvc -pdf' #continue mode
+alias latc='latexmk -c'         #clean
+alias texbib='latexmk -pdf -bibtex -pdf -pdf'
+
+#diskutil
+alias dl='diskutil list'
+alias d='diskutil'

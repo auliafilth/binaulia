@@ -1,0 +1,24 @@
+#export EDITOR="mate -w"
+#export PATH=$PATH:~/usr/bin
+#export PATH=$PATH:~/bin
+
+export ROS_OS_OVERRIDE=osx:homebrew
+
+export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/sbin:$PATH
+export PATH=/usr/texbin:$PATH
+export ROS_NO_SUDO_PIP=True
+
+export ROS_LOCATIONS="rospkg=/path/to/rospkg:stairpkg=/path/to/stairpkg"
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages:/usr/local/lib/python:$PYTHONPATH
+#export PATH=/usr/local/share/python:$PATH
+
+#export PATH=/usr/local/opt/ruby/bin:$PATH
+export PATH=/usr/local/opt/ruby193/bin:$PATH
+export CPLUS_INCLUDE_PATH="/usr/local/include:$CPLUS_INCLUDE_PATH"
+
+#export ROS_OS_OVERRIDE=osxbrew:lion
+#export PATH=/usr/local/lib/wxPython/bin:$PATH
+#export ROS_PACKAGE_PATH=/home/user/ros/ros-pkg:/another/path
+
+export MSF_DATABASE_CONFIG=/usr/local/share/metasploit-framework/config/database.yml
